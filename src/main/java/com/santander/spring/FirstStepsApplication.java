@@ -1,6 +1,7 @@
 package com.santander.spring;
 
 import com.santander.spring.Domain.Calculator;
+import com.santander.spring.Domain.Phonebook;
 import com.santander.spring.Domain.ViaCep.Cep;
 import com.santander.spring.Domain.ViaCep.ConversorJson;
 import org.springframework.boot.CommandLineRunner;
@@ -16,12 +17,16 @@ public class FirstStepsApplication {
 	}
 
 	@Bean
-	public CommandLineRunner run(ConversorJson conversor, Calculator calculator) throws Exception  {
+	public CommandLineRunner run(ConversorJson conversor, Calculator calculator, Phonebook phonebook) throws Exception  {
 		return args -> {
 			String json = "{\"cep\": \"12345\", \"log\": \"Logan Sergey\", \"local\": \"sp\"}";
 			Cep response = conversor.convert(json);
 			System.out.println("\n\nCep data: " + response);
 			System.out.println("\nCalculator Sum: " + calculator.sum(10, 115.8));
+
+			phonebook.addPhone("Juan Melian", "1227182781");
+			phonebook.addPhone("JP", "1227182781");
+			System.out.println("\n" + phonebook);
 		};
 	}
 }

@@ -6,14 +6,16 @@ public class Cep {
     private String log;
     private String local;
 
-    public String getCep() {
-        return cep;
-    }
+    public Cep() {}
 
     public Cep(String cep, String log, String local) {
         this.cep = cep;
         this.log = log;
         this.local = local;
+    }
+
+    public String getCep() {
+        return cep;
     }
 
     @Override
