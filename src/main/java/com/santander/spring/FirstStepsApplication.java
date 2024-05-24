@@ -16,7 +16,7 @@ public class FirstStepsApplication {
 		SpringApplication.run(FirstStepsApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	public CommandLineRunner run(ConversorJson conversor, Calculator calculator, Phonebook phonebook) throws Exception  {
 		return args -> {
 			String json = "{\"cep\": \"12345\", \"log\": \"Logan Sergey\", \"local\": \"sp\"}";
@@ -28,7 +28,7 @@ public class FirstStepsApplication {
 			phonebook.addPhone("JP", "1227182781");
 			System.out.println("\n" + phonebook);
 		};
-	}
+	}*/
 }
 
 
