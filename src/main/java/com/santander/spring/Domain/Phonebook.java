@@ -16,7 +16,7 @@ public class Phonebook {
 
     @Override
     public String toString() {
-        return("Phonebook{" + "phonebook=" + phonebook + '}');
+        return("{" + "phonebook=" + phonebook + '}');
     }
 
     public Map<String, String> findByName(String name) {
