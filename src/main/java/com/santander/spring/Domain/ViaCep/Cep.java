@@ -10,6 +10,12 @@ public class Cep {
         return cep;
     }
 
+    public Cep(String cep, String log, String local) {
+        this.cep = cep;
+        this.log = log;
+        this.local = local;
+    }
+
     @Override
     public String toString() {
         return("Cep{" + "cep='" + cep + '\'' + ", log='" + log + '\'' + ", local='" + local + '\'' + '}');
