@@ -1,4 +1,4 @@
-package com.santander.spring;
+/*package com.santander.spring;
 
 import com.santander.spring.Domain.Calculator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,10 +13,10 @@ public class App implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Calculator calculator = new Calculator();
-        System.out.println("\n"+calculator.sum(10, 20));
+        System.out.println("\n" + this.calculator.sum(10, 20));
     }
 }
 
 
+*/
 
